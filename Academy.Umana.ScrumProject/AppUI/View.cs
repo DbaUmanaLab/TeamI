@@ -16,6 +16,8 @@ namespace AppUI
 
 
         Classe[] classi = new Classe[200];
+        Alunno[] alunni = new Alunno[200];
+
 
         public View()
         {
@@ -36,9 +38,9 @@ namespace AppUI
         {
             Csv utilis = new Csv();
 
-            classi = utilis.LoadGraph("CSV\\ElencoAlunni.csv");
+            alunni = utilis.LoadGraphAlunno("CSV\\ElencoAlunni.csv");
            
-            dataGridView1.DataSource = classi;
+            dataGridView1.DataSource = alunni;
         }
 
         private void BtnMaterieVoti_Click(object sender, EventArgs e)

@@ -24,24 +24,12 @@ namespace AppUI
 
         private void btnElencoClassi_Click(object sender, EventArgs e)
         {
+            Csv utilis = new Csv();
 
-            //C:\ACADEMY\Progetto SCRUM\TeamI\CSV\ElencoClassi.csv
-            //DialogResult result = openFileDialog1.ShowDialog();
-
-            //if (result == DialogResult.OK)
-            //{
-                Csv utilis = new Csv();
-
-           // classi = utilis.LoadGraph("C:\\ACADEMY\\Progetto SCRUM\\TeamI\\CSV\\ElencoClassi.csv");
             classi = utilis.LoadGraph("CSV\\ElencoClassi.csv");
 
-            //Directory.GetCurrentDirectory()
-
-            //MessageBox.Show("Hai aperto un file", "File aperto", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
             dataGridView1.DataSource = classi;
-
-            //}  
+              
         }
 
         private void BtnAlunniClasse_Click(object sender, EventArgs e)
@@ -49,23 +37,38 @@ namespace AppUI
             Csv utilis = new Csv();
 
             classi = utilis.LoadGraph("CSV\\ElencoAlunni.csv");
-            //MessageBox.Show("Hai aperto un file", "File aperto", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+           
             dataGridView1.DataSource = classi;
         }
 
         private void BtnMaterieVoti_Click(object sender, EventArgs e)
         {
+            Csv utilis = new Csv();
+
+            classi = utilis.LoadGraph("CSV\\ElencoMaterie.csv");
+
+            dataGridView1.DataSource = classi;
 
         }
 
         private void BtnAlunniInsufficienti_Click(object sender, EventArgs e)
         {
+            /*
+            Csv utilis = new Csv();
+
+            classi = utilis.LoadGraph("CSV\\ElencoClassi.csv");
+
+            dataGridView1.DataSource = classi; */
 
         }
 
         private void BtnInfoVoto_Click(object sender, EventArgs e)
         {
+            Csv utilis = new Csv();
+
+            classi = utilis.LoadGraph("CSV\\ElencoVoti.csv");
+
+            dataGridView1.DataSource = classi;
 
         }
 

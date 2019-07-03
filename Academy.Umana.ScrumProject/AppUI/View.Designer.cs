@@ -34,6 +34,7 @@
             this.btnAlunniInsufficienti = new System.Windows.Forms.Button();
             this.btnInfoVoto = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -96,6 +97,10 @@
             this.dataGridView1.TabIndex = 5;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentClick);
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // View
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -122,6 +127,7 @@
         private System.Windows.Forms.Button btnAlunniInsufficienti;
         private System.Windows.Forms.Button btnInfoVoto;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
 

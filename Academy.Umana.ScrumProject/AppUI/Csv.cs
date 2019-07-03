@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AppLogic.Entities;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -21,9 +22,9 @@ namespace AppUI
 
                    classi[index] = new Classe()
                    {
-                       ID   =  (values[0]), 
-                       Sez  =  (values[1]),
-                       Anno = int.Parse(values[2])                  
+                       ID_Classe =  int.Parse(values[0]),
+                       Sezione =  (values[1]),
+                       Anno = (values[2])                  
                    };
                    index++;
 

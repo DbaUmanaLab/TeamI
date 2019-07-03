@@ -4,8 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.29020.237
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppUI", "AppUI\AppUI.csproj", "{525BC37C-8B6D-4339-A31C-8E706D6FDD8B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{32FF0DBC-B0F9-4B2E-B6D2-ADD3B97A745F} = {32FF0DBC-B0F9-4B2E-B6D2-ADD3B97A745F}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppLogic", "AppLogic\AppLogic.csproj", "{32FF0DBC-B0F9-4B2E-B6D2-ADD3B97A745F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppLogic", "AppLogic\AppLogic.csproj", "{32FF0DBC-B0F9-4B2E-B6D2-ADD3B97A745F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

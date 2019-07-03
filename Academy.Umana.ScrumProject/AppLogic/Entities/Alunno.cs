@@ -4,7 +4,7 @@ using System.Text;
 
 namespace AppLogic.Entities
 {
-    class Alunno
+    public class Alunno
     {
         public int ID_Alunno { get; set; }
         public string Nome { get; set; }

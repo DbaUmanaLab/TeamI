@@ -1,0 +1,9 @@
+﻿ID_alunno,nome,cognome,FK_classe
+1,carlo,magno,1
+2,sara,moccia,1
+3,cristiano,bagno,2
+4,giada,nada,2
+5,luca,barocco,3
+6,federica,nitta,3
+7,gianni,manni,4
+8,gemma,enna,4 

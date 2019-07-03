@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29020.237
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppUI", "AppUI\AppUI.csproj", "{525BC37C-8B6D-4339-A31C-8E706D6FDD8B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{525BC37C-8B6D-4339-A31C-8E706D6FDD8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{525BC37C-8B6D-4339-A31C-8E706D6FDD8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{525BC37C-8B6D-4339-A31C-8E706D6FDD8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{525BC37C-8B6D-4339-A31C-8E706D6FDD8B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4E8519D7-FA06-47FB-921F-F641D77D25CD}
+	EndGlobalSection
+EndGlobal

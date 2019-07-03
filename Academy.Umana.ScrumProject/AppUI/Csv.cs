@@ -6,7 +6,7 @@ namespace AppUI
 {
     public class Csv
     {
-        public Classe[] LoadGraph(string path)
+        public Classe[] LoadGraphClasse(string path)
         {
             Classe[] classi = new Classe[200];
             string[] content = File.ReadAllLines(path).Skip(1).ToArray();

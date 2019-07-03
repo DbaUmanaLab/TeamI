@@ -18,17 +18,19 @@ namespace AppUI
         Classe[] classi = new Classe[200];
         Alunno[] alunni = new Alunno[200];
 
+        //List<Classe> classi = new List<Classe>();
+        //List<Alunno> alunni = new List<Alunno>();
 
         public View()
         {
             InitializeComponent();
         }
 
-        private void btnElencoClassi_Click(object sender, EventArgs e)
+        private void BtnElencoClassi_Click(object sender, EventArgs e)
         {
             Csv utilis = new Csv();
 
-            classi = utilis.LoadGraph("CSV\\ElencoClassi.csv");
+            classi = utilis.LoadGraphClasse("CSV\\ElencoClassi.csv");
 
             dataGridView1.DataSource = classi;
               
@@ -47,7 +49,7 @@ namespace AppUI
         {
             Csv utilis = new Csv();
 
-            classi = utilis.LoadGraph("CSV\\ElencoMaterie.csv");
+            classi = utilis.LoadGraphClasse("CSV\\ElencoMaterie.csv");
 
             dataGridView1.DataSource = classi;
 
@@ -58,7 +60,7 @@ namespace AppUI
             /*
             Csv utilis = new Csv();
 
-            classi = utilis.LoadGraph("CSV\\ElencoClassi.csv");
+            classi = utilis.LoadGraphClasse("CSV\\ElencoClassi.csv");
 
             dataGridView1.DataSource = classi; */
 
@@ -68,7 +70,7 @@ namespace AppUI
         {
             Csv utilis = new Csv();
 
-            classi = utilis.LoadGraph("CSV\\ElencoVoti.csv");
+            classi = utilis.LoadGraphClasse("CSV\\ElencoVoti.csv");
 
             dataGridView1.DataSource = classi;
 

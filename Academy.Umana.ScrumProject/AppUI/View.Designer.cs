@@ -46,7 +46,7 @@
             this.btnElencoClassi.TabIndex = 0;
             this.btnElencoClassi.Text = "Elenco Classi";
             this.btnElencoClassi.UseVisualStyleBackColor = true;
-            this.btnElencoClassi.Click += new System.EventHandler(this.btnElencoClassi_Click);
+            this.btnElencoClassi.Click += new System.EventHandler(this.BtnElencoClassi_Click);
             // 
             // btnAlunniClasse
             // 
@@ -93,7 +93,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(253, 29);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1129, 702);
+            this.dataGridView1.Size = new System.Drawing.Size(1271, 702);
             this.dataGridView1.TabIndex = 5;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentClick);
             // 
@@ -105,7 +105,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1435, 756);
+            this.ClientSize = new System.Drawing.Size(1556, 756);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnInfoVoto);
             this.Controls.Add(this.btnAlunniInsufficienti);

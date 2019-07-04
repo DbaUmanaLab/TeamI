@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DataAccess;
 
 namespace AppUI
 {
@@ -15,8 +16,10 @@ namespace AppUI
     {
 
 
-        Classe[] classi = new Classe[200];
-        Alunno[] alunni = new Alunno[200];
+        //Classe[] classi = new Classe[200];
+        //Alunno[] alunni = new Alunno[200];
+        List<Classe> classi = new List<Classe>();
+        List<Alunno> alunni = new List<Alunno>();
 
 
         public View()
@@ -26,20 +29,24 @@ namespace AppUI
 
         private void btnElencoClassi_Click(object sender, EventArgs e)
         {
-            Csv utilis = new Csv();
+            //Csv utilis = new Csv();
 
-            classi = utilis.LoadGraph("CSV\\ElencoClassi.csv");
+            //classi = utilis.LoadGraph("CSV\\ElencoClassi.csv");
 
+            //dataGridView1.DataSource = classi;
+            classi = SqliteDataAccess.LoadClassi();
             dataGridView1.DataSource = classi;
-              
+
+
         }
 
         private void BtnAlunniClasse_Click(object sender, EventArgs e)
         {
-            Csv utilis = new Csv();
+            //Csv utilis = new Csv();
 
-            alunni = utilis.LoadGraphAlunno("CSV\\ElencoAlunni.csv");
-           
+            //alunni = utilis.LoadGraphAlunno("CSV\\ElencoAlunni.csv");
+
+            alunni = SqliteDataAccess.LoadAlunni();
             dataGridView1.DataSource = alunni;
         }
 
@@ -47,7 +54,7 @@ namespace AppUI
         {
             Csv utilis = new Csv();
 
-            classi = utilis.LoadGraph("CSV\\ElencoMaterie.csv");
+            //classi = utilis.LoadGraph("CSV\\ElencoMaterie.csv");
 
             dataGridView1.DataSource = classi;
 
@@ -68,7 +75,7 @@ namespace AppUI
         {
             Csv utilis = new Csv();
 
-            classi = utilis.LoadGraph("CSV\\ElencoVoti.csv");
+            //classi = utilis.LoadGraph("CSV\\ElencoVoti.csv");
 
             dataGridView1.DataSource = classi;
 

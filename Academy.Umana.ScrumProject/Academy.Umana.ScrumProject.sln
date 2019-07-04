@@ -10,6 +10,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppUI", "AppUI\AppUI.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppLogic", "AppLogic\AppLogic.csproj", "{32FF0DBC-B0F9-4B2E-B6D2-ADD3B97A745F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{C888A7C5-81D4-4472-8C2B-50A9D502C671}"
+	ProjectSection(ProjectDependencies) = postProject
+		{32FF0DBC-B0F9-4B2E-B6D2-ADD3B97A745F} = {32FF0DBC-B0F9-4B2E-B6D2-ADD3B97A745F}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +29,10 @@ Global
 		{32FF0DBC-B0F9-4B2E-B6D2-ADD3B97A745F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32FF0DBC-B0F9-4B2E-B6D2-ADD3B97A745F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32FF0DBC-B0F9-4B2E-B6D2-ADD3B97A745F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C888A7C5-81D4-4472-8C2B-50A9D502C671}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C888A7C5-81D4-4472-8C2B-50A9D502C671}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C888A7C5-81D4-4472-8C2B-50A9D502C671}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C888A7C5-81D4-4472-8C2B-50A9D502C671}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -15,8 +15,12 @@ namespace AppUI
     {
 
 
-        Classe[] classi = new Classe[200];
-        Alunno[] alunni = new Alunno[200];
+        //Classe[] classi = new Classe[200];
+        //Alunno[] alunni = new Alunno[200];
+        List<Alunno> alunni;
+        List<Classe> classi;
+        List<Materia> materie;
+        List<Voto> voti;
 
 
         public View()
@@ -31,7 +35,7 @@ namespace AppUI
             classi = utilis.LoadGraph("CSV\\ElencoClassi.csv");
 
             dataGridView1.DataSource = classi;
-              
+
         }
 
         private void BtnAlunniClasse_Click(object sender, EventArgs e)
@@ -39,17 +43,18 @@ namespace AppUI
             Csv utilis = new Csv();
 
             alunni = utilis.LoadGraphAlunno("CSV\\ElencoAlunni.csv");
-           
+
             dataGridView1.DataSource = alunni;
         }
+
 
         private void BtnMaterieVoti_Click(object sender, EventArgs e)
         {
             Csv utilis = new Csv();
 
-            classi = utilis.LoadGraph("CSV\\ElencoMaterie.csv");
+            materie = utilis.LoadGraphMateria("CSV\\ElencoMaterie.csv");
 
-            dataGridView1.DataSource = classi;
+            dataGridView1.DataSource = materie;  
 
         }
 
@@ -68,9 +73,9 @@ namespace AppUI
         {
             Csv utilis = new Csv();
 
-            classi = utilis.LoadGraph("CSV\\ElencoVoti.csv");
+            voti = utilis.LoadGraphVoto("CSV\\ElencoVoti.csv");
 
-            dataGridView1.DataSource = classi;
+            dataGridView1.DataSource = voti;
 
         }
 
@@ -78,5 +83,22 @@ namespace AppUI
         {
 
         }
+
+        private void View_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
+
+        private void DataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            using (Form1 secondForm = new Form1())
+            {
+                secondForm.ShowDialog();
+
+            }
+        }
+
     }
 }
